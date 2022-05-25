@@ -14,6 +14,7 @@ def pass_gen(length):
   else:
     password+=random.choice(digits)
     password+=random.choice(letter)
+    password+=random.choice(letter_2)
     password+=random.choice(symbol)
     while len(password) < length:
       password+=str(random.choice([random.randint(0,4)]))
